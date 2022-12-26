@@ -1,0 +1,41 @@
+body{
+    font-family: 'Roboto Flex', sans-serif;
+}
+/*Barra superior*/
+nav{
+    padding: 5px 0 5px 50px;
+    background-color: #737373;
+    border-bottom: 1px solid black;
+    position: relative;
+    height: 55px;
+}
+p{
+    text-align: center;
+}
+#titulo{
+    font-family: 'Alexandria', sans-serif;
+    color:#262626;
+    font-size: 36px;
+    font-weight: 600;
+    margin-left: 10px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 150px;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+#tituloJap{
+    font-family: 'Noto Sans JP', sans-serif;
+    color:#BFBFBF;
+}
+/*Parte central*/
+section{
+    width: 80%;
+    margin:50px 100px 0 auto;
+}
+h2{
+    font-family: 'Alexandria', sans-serif;
+    font-size: 24px;
+}
