@@ -6,6 +6,9 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'app.js',
-    clean: true,
+    //clean: true,
+  },
+  devServer: {
+    static: './dist',
   },
 };

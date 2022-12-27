@@ -6,12 +6,12 @@ function log(texto){
 
 function nuevoElm(elm){
     pedido.push(elm);
-    log("[NUEVO] "+elm)
+    log("[-NUEVO-] "+elm)
 }
 
 function borrarElm(ind){
     pedido.splice(ind,1);
-    log("[BORRADO] "+ind)
+    log("[ BORRADO ] "+ind)
 }
 
 nuevoElm("Nigiri salmon");

@@ -15,7 +15,7 @@
   \********************/
 /***/ (() => {
 
-eval("const pedido=[];\r\n\r\nfunction log(texto){\r\n    console.log(texto);\r\n}\r\n\r\nfunction nuevoElm(elm){\r\n    pedido.push(elm);\r\n    log(\"[NUEVO] \"+elm)\r\n}\r\n\r\nfunction borrarElm(ind){\r\n    pedido.splice(ind,1);\r\n    log(\"[BORRADO] \"+ind)\r\n}\r\n\r\nnuevoElm(\"Nigiri salmon\");\r\nnuevoElm(\"California roll\");\r\nborrarElm(\"Nigiri salmon\");\r\n\n\n//# sourceURL=webpack://sushirock/./src/app.js?");
+eval("const pedido=[];\r\n\r\nfunction log(texto){\r\n    console.log(texto);\r\n}\r\n\r\nfunction nuevoElm(elm){\r\n    pedido.push(elm);\r\n    log(\"[-NUEVO-] \"+elm)\r\n}\r\n\r\nfunction borrarElm(ind){\r\n    pedido.splice(ind,1);\r\n    log(\"[ BORRADO ] \"+ind)\r\n}\r\n\r\nnuevoElm(\"Nigiri salmon\");\r\nnuevoElm(\"California roll\");\r\nborrarElm(\"Nigiri salmon\");\r\n\n\n//# sourceURL=webpack://sushirock/./src/app.js?");
 
 /***/ })
 
