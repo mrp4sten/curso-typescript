@@ -15,7 +15,7 @@
   \********************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("const util=__webpack_require__(/*! ./util.js */ \"./src/util.js\");\r\nconst pedido=[];\r\n\r\n\r\nfunction nuevoElm(elm){\r\n    pedido.push(elm);\r\n    util.log(\"[-NUEVO-] \"+elm)\r\n}\r\n\r\nfunction borrarElm(ind){\r\n    pedido.splice(ind,1);\r\n    util.log(\"[ BORRADO ] \"+ind);\r\n}\r\n\r\nnuevoElm(\"Nigiri salmon\");\r\nnuevoElm(\"California roll\");\r\nborrarElm(\"Nigiri salmon\");\r\n\n\n//# sourceURL=webpack://sushirock/./src/app.js?");
+eval("const util=__webpack_require__(/*! ./util.js */ \"./src/util.js\");\r\nconst pedido=[];\r\nconst MAX_PEDIDOS=3;\r\nconst carrito=document.getElementById('carrito');\r\nvar sushi_items = document.getElementsByClassName(\"sushi_item\");\r\n\r\nfunction nuevoElm(elm){\r\n    if(pedido.length<MAX_PEDIDOS){\r\n        carrito.innerHTML=carrito.innerHTML+\"<span>\"+elm.currentTarget.innerHTML+\"</span>\"\r\n        pedido.push(elm.currentTarget);\r\n        util.log(\"[NUEVO] \"+elm.currentTarget)\r\n    }else{\r\n        util.log(\"[CARRRITO] Carrito lleno\")\r\n    }\r\n}\r\n\r\nfunction borrarElm(ind){\r\n    pedido.splice(ind,1);\r\n    util.log(\"[BORRADO] \"+ind);\r\n}\r\n\r\nfor (var i = 0; i < sushi_items.length; i++) {\r\n    sushi_items[i].addEventListener('click', nuevoElm, false);\r\n}\n\n//# sourceURL=webpack://sushirock/./src/app.js?");
 
 /***/ }),
 
