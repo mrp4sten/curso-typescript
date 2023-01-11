@@ -1,1 +1,3 @@
-console.log("Mi primer proyecto con TS");
+let nombre:string="Paco";
+let edad:number=40;
+console.log("Bienvenido a tu primer "+nombre+" proyecto con TS");

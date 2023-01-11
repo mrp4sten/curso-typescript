@@ -19,6 +19,15 @@ module.exports = {
             ],
           }),
     ],   
+    module: {
+        rules: [
+          // all files with a `.ts`, `.cts`, `.mts` or `.tsx` extension will be handled by `ts-loader`
+          { 
+            test: /\.ts$/,  
+            exclude: /node_modules/,
+            loader: "ts-loader" }
+        ]
+    },
     devtool: "inline-source-map",
     mode: "development",
     devServer:{
