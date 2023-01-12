@@ -1,3 +1,9 @@
 let nombre:string="Paco";
 let edad:number=40;
-console.log("Bienvenido a tu primer "+nombre+" proyecto con TS");
+let peso:number=80;
+let altura:number=175;
+let sexo:boolean=true;
+
+let imc=peso/(altura*altura);
+
+console.log("El calculo del IMC: "+imc);
