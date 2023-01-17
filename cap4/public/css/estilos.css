@@ -62,6 +62,9 @@ select,option,input{
     padding: 5px;
     border-radius: 5px;
 }
+#KcalOpt{
+    color: white;
+}
 button{
     font-family: 'Roboto Flex', sans-serif;
     font-size: 16px; 
