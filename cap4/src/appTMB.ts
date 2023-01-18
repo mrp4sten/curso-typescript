@@ -1,3 +1,4 @@
+//Calculo de las calorias optimas
 //Definicion de las variables
 let nombre:string;
 
@@ -84,8 +85,6 @@ function recogidaDatos(event:any){
     KcalOpt.value=kcalmin.toString();
     
 }
-
 //Evento de calculo formulario navegacion
 botonCalculo.addEventListener("click",recogidaDatos);
 
-console.log("Bienvenido a WonderFood");
