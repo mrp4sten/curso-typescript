@@ -8,8 +8,12 @@ function getPlatosApi(sMenu:SelectorMenu){
     .then((data) =>{ 
         let PLATOS:PlatoInterface[];
         PLATOS=data.results;
-        PLATOS.forEach((plato:PlatoInterface)=>console.log(`titulo: ${plato.title}`));
         sMenu.platos=PLATOS;
+        sMenu.mostrarPrimeros();
+        PLATOS.forEach(
+            (plato:PlatoInterface)=>console.log(`titulo: ${plato.title}`)
+        );
+        
     }); 
 }
 
