@@ -133,4 +133,5 @@ li{
 li p{
     padding-top: 2px;
     border-top: 1px solid #2D3E40;
+    max-width: 100px;
 }
