@@ -1,20 +1,23 @@
-body{
+body {
     font-family: 'Roboto Flex', sans-serif;
 }
+
 /*Barra superior*/
-nav{
+nav {
     padding: 5px 0 5px 50px;
     background-color: #737373;
     border-bottom: 1px solid black;
     position: relative;
     height: 55px;
 }
-p{
+
+p {
     text-align: center;
 }
-#titulo{
+
+#titulo {
     font-family: 'Alexandria', sans-serif;
-    color:#262626;
+    color: #262626;
     font-size: 36px;
     font-weight: 600;
     margin-left: 10px;
@@ -26,16 +29,59 @@ p{
     transform: translateY(-50%);
 }
 
-#tituloJap{
+#tituloJap {
     font-family: 'Noto Sans JP', sans-serif;
-    color:#BFBFBF;
+    color: #BFBFBF;
 }
+
 /*Parte central*/
-section{
+section {
     width: 80%;
-    margin:50px 100px 0 auto;
+    margin: 50px auto 0 auto;
+    text-align: center;
 }
-h2{
+
+h2 {
     font-family: 'Alexandria', sans-serif;
     font-size: 24px;
+}
+
+/*Carta de sushi*/
+#container {
+    display: flex;
+    flex-direction: column;
+}
+
+#carta {
+    display: grid;
+    margin: 20px auto 0 auto;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(4, 100px);
+    justify-items: center;
+    align-items: center;
+}
+
+/*Carrito sushi*/
+#carritoContainer {
+    margin: 0 auto 0 auto;
+    text-align: center;
+}
+
+#carritoImg {
+    border-radius: 10px 0 0 10px;
+    border: 2px solid #737373;
+    padding: 10px;
+    width: 70px;
+    background-color: #BFBFBF;
+    float: left;
+}
+
+#carrito {
+    border-radius: 0 10px 10px 0;
+    border: 2px solid #737373;
+    padding: 10px;
+    width: 270px;
+    min-height: 77px;
+    background-color: #BFBFBF;
+    float: left;
 }
